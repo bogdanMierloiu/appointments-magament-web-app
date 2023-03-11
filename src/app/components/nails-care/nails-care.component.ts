@@ -9,6 +9,7 @@ import { NailsCareService } from 'src/app/services/nails-care/nails-care.service
 })
 export class NailsCareComponent implements OnInit {
   nailscare: NailsCare[] = [];
+  
 
   constructor(private _nailsCareService: NailsCareService) {}
 
@@ -21,4 +22,6 @@ export class NailsCareComponent implements OnInit {
       this.nailscare = data;
     });
   }
+
+  
 }
