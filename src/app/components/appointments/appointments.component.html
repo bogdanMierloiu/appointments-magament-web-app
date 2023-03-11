@@ -1,20 +1,26 @@
 <div>
     <table class="table table-hover">
-      <thead>
-        <tr>
-          <th>Date & Time</th>
-          <th>Manicurist</th>
-          <th>Customer</th>
-          <th>Nails Cares</th>         
-        </tr>
-      </thead>
-      <tbody *ngFor="let appointment of appointments">
-        <tr>
-          <td>{{appointment.appointmentDateTime}}</td>
-          <td>{{appointment.manicurist}}</td>
-          <td>{{appointment.customer}}</td>
-          <td>{{appointment.nailsCares}}</td>          
-        </tr>
-      </tbody>
+        <thead>
+            <tr>
+                <th>Date & Time</th>
+                <th>Manicurist</th>
+                <th>Customer</th>
+                <th>Nails Cares</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let appointment of appointments">
+            <tr>
+                <td>{{appointment.appointmentDateTime | date: 'yyyy-MM-dd hh:mm a'}}</td>
+                <td>{{appointment.manicurist.fullName}}</td>
+                <td>{{appointment.customer.fullName}}</td>
+                <td>
+                    <ul>
+                        <li *ngFor="let nailsCare of appointment.nailsCares">
+                            {{nailsCare.serviceName}}
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
     </table>
-  </div>
+</div>

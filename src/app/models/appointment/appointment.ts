@@ -5,8 +5,8 @@ import { NailsCareResponse } from '../nails-care/nails-for-appointments';
 
 export interface Appointment {
   id: number;
-  appointmentDateTime: LocalDateTime;
+  appointmentDateTime: Date;
   manicurist: ManicuristResponse;
   customer: CustomerResponse;
-  nailsCares: NailsCareResponse;
+  nailsCares: NailsCareResponse[];
 }

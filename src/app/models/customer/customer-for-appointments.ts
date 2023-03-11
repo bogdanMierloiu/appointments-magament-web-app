@@ -1,5 +1,6 @@
 export interface CustomerResponse {
   id: number;
-  firstname: string;
+  firstName: string;
   lastName: string;
+  fullName: string;
 }
