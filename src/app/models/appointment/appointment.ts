@@ -1,10 +1,12 @@
-import {Manicurist} from 'src/app/models/manicurist/manicurist';
-import {Customer} from 'src/app/models/customer/customer';
+import { LocalDateTime } from '@js-joda/core';
+import { CustomerResponse } from '../customer/customer-for-appointments';
+import { ManicuristResponse } from '../manicurist/manicurist-for-appointments';
+import { NailsCareResponse } from '../nails-care/nails-for-appointments';
 
-export class Appointment {
-    id!:number;
-    LocalDateTime! : Date;   
-
-
+export interface Appointment {
+  id: number;
+  appointmentDateTime: LocalDateTime;
+  manicurist: ManicuristResponse;
+  customer: CustomerResponse;
+  nailsCares: NailsCareResponse;
 }
-

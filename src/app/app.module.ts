@@ -13,9 +13,14 @@ import { AppointmentService } from './services/appointment/appointment.service';
 import { ManicuristService } from './services/manicurist/manicurist.service';
 import { CustomerService } from './services/customer/customer.service';
 import { NailsCareService } from './services/nails-care/nails-care.service';
+import { MainComponent } from './components/main/main.component';
 
 const routes: Routes = [
+  { path: 'main', component: MainComponent },
+  { path: 'appointments', component: AppointmentsComponent},
   { path: 'customers', component: CustomerComponent },
+  { path: 'nailscare', component: NailsCareComponent },
+  { path: 'manicurists', component: ManicuristComponent},
   { path: '', redirectTo: '/customers', pathMatch: 'full' },
   { path: '**', redirectTo: '/customers', pathMatch: 'full' },
 ];
@@ -27,12 +32,12 @@ const routes: Routes = [
     ManicuristComponent,
     NailsCareComponent,
     AppointmentsComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
-    // RouterModule.forRoot(routers),
     FormsModule,
   ],
   providers: [

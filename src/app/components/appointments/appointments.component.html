@@ -1,1 +1,20 @@
-<p>appointments works!</p>
+<div>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Date & Time</th>
+          <th>Manicurist</th>
+          <th>Customer</th>
+          <th>Nails Cares</th>         
+        </tr>
+      </thead>
+      <tbody *ngFor="let appointment of appointments">
+        <tr>
+          <td>{{appointment.appointmentDateTime}}</td>
+          <td>{{appointment.manicurist}}</td>
+          <td>{{appointment.customer}}</td>
+          <td>{{appointment.nailsCares}}</td>          
+        </tr>
+      </tbody>
+    </table>
+  </div>
