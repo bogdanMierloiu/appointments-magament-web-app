@@ -1,0 +1,9 @@
+<h1>Customers</h1>
+<div *ngFor="let customer of customers">
+  <h3>{{customer.firstName}}</h3>
+  <h3>{{customer.lastName}}</h3>
+  <h3>{{customer.phoneNumber}}</h3>
+  <h3>{{customer.birthDate.toString()}}</h3>
+  <h3>{{customer.email}}</h3>
+  <h3>{{customer.active}}</h3>
+</div>
