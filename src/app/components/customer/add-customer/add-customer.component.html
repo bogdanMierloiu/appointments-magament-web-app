@@ -1,0 +1,27 @@
+<div class="container text-center" id="add-new">
+    <div class="form-group">
+        <form (submit)="addCustomer()">
+            <label for="firstName">First name:</label>
+            <input type="text" class="form-control" id="firstName" name="firstName"
+                [(ngModel)]="customerToAdd.firstName">
+            <br>
+            <label for="lastName">Last name:</label>
+            <input type="text" class="form-control" id="lastName" name="lastName"
+                [(ngModel)]="customerToAdd.lastName">
+            <br>
+            <label for="phoneNumber">Phone number:</label>
+            <input type="text" class="form-control" id="phoneNumber" name="phoneNumber"
+                [(ngModel)]="customerToAdd.phoneNumber">
+            <br>
+            <label for="birthDate">Birth date:</label>
+            <input type="date" class="form-control" id="birthDate" name="birthDate"
+                [(ngModel)]="customerToAdd.birthDate">
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" class="form-control" id="email" name="email"
+                [(ngModel)]="customerToAdd.email">
+            <br>            
+            <button class="btn btn-primary" type="submit">Add</button>
+        </form>
+    </div>
+</div>
