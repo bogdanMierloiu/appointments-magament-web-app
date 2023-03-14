@@ -7,14 +7,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CustomerComponent } from './components/customer/customer/customer.component';
 import { ManicuristComponent } from './components/manicurist/manicurist/manicurist.component';
-import { NailsCareComponent } from './components/nails-care/nails-care.component';
+import { NailsCareComponent } from './components/nails-care/list-nails-care/nails-care.component';
 import { AppointmentsComponent } from './components/appointments/appointments.component';
 import { AppointmentService } from './services/appointment/appointment.service';
 import { ManicuristService } from './services/manicurist/manicurist.service';
 import { CustomerService } from './services/customer/customer.service';
 import { NailsCareService } from './services/nails-care/nails-care.service';
 import { MainComponent } from './components/main/main.component';
-import { AddNailsCareComponent } from './components/add-nails-care/add-nails-care.component';
+import { AddNailsCareComponent } from './components/nails-care/add-nails-care/add-nails-care.component';
 
 const routes: Routes = [
   { path: 'main', component: MainComponent },

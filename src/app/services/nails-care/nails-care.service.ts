@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { NailsCare } from 'src/app/models/nails-care/nails-care';
-import { CreateNailsCare } from '../../models/nails-care/create-nails-care';
+import { CreateNailsCare } from '../../models/nails-care/add-nails-care';
 
 @Injectable({
   providedIn: 'root',

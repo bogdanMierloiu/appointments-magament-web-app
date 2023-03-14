@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { CreateNailsCare } from 'src/app/models/nails-care/create-nails-care';
+import { CreateNailsCare } from 'src/app/models/nails-care/add-nails-care';
 import { NailsCareService } from 'src/app/services/nails-care/nails-care.service';
 
 @Component({
